@@ -579,6 +579,7 @@ static void *MRProgressOverlayViewObservationContext = &MRProgressOverlayViewObs
         animBlock();
     }
     
+    self.backgroundColor = UIColor.clearColor;
     UIAccessibilityPostNotification(UIAccessibilityScreenChangedNotification, nil);
     UIAccessibilityPostNotification(UIAccessibilityAnnouncementNotification, self.titleLabelText);
 }
